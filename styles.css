@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.sectionheader {
+    font-size: 2rem;
+    background-color: #007bb8;
+    color: #dddddd;
+    height: 2.5%;
+    width: 100%;
+    align-items: center;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 1%;
+}
+
+.cardsectionheader {
+    font-size: 2rem;
+    background-color: #007bb8;
+    color: #dddddd;
+    height: 45px;
+    width: 98%;
+    align-items: center;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 8%;
+    padding-top: 10px;
+    margin-left: 12px;
+    border-radius: 20px 20px 20px 0;
+}
+
+.verticalsection {
+    font-size: 1.25rem;
+    background-color: #007bb8;
+    color: #dddddd;   
+    border-radius: 0 0 20px 20px; 
+}
+
+#maincontainer {
+    padding-top: 50px;    
+}
+
+#projectDropDown {
+    position:absolute;
+    left: 130px;     
+    top: 80px;   
+    color:bg-light;    
+}
+
+.setheight {
+    height:2048px;
+}
+
+.card {
+    /*border-color: black;*/
+}
