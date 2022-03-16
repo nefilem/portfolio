@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #fcd768;
 }
 
 .sectionheader {
     font-size: 2rem;
-    background-color: #007bb8;
-    color: #dddddd;
+    background-color: #fcd768;
+    color: #ebc657;
     height: 2.5%;
     width: 100%;
     align-items: center;
@@ -25,17 +27,17 @@ body {
     align-items: center;
     text-align: left;
     vertical-align: middle;
-    padding-left: 8%;
+    padding-left: 15.5%;
     padding-top: 10px;
     margin-left: 12px;
     border-radius: 20px 20px 20px 0;
 }
 
 .verticalsection {
-    font-size: 1.25rem;
+    font-size: 0.75rem;
     background-color: #007bb8;
     color: #dddddd;   
-    border-radius: 0 0 20px 20px; 
+    border-radius: 0 0 0 20px; 
 }
 
 #maincontainer {
@@ -54,5 +56,36 @@ body {
 }
 
 .card {
-    /*border-color: black;*/
+    border-style: none;
+    background-color: #fcd768;
+}
+
+.cardbody {
+    background-color: white;
+}
+
+.quotebody {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.25rem;
+    text-align: right;
+}
+
+.quoteauthor {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.25rem;
+    text-align: right;
+}
+
+.mebody {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.25rem;
+    background-color: #fcd768;
+    color:black;
+}
+
+.mebodyhighlight {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    background-color: #fcd768;
+    color: #ff37b5;
 }
