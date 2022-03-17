@@ -78,7 +78,7 @@ body {
 
 .mebody {
     font-family: 'Roboto', sans-serif;
-    font-size: 2.25rem;
+    font-size: 2rem;
     background-color: #fcd768;
     color:black;
 }
@@ -88,4 +88,8 @@ body {
     font-size: 2.5rem;
     background-color: #fcd768;
     color: #ff37b5;
+}
+
+.resizebutton {
+    width:100%;
 }

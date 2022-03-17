@@ -11,11 +11,11 @@
     <script src="./index.js"></script>
     <title>Keiron Goodwin - Portfolio</title>
 </head>
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100" onload="generateContent();">
     <!-- Navbar section -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#"><img src="./images/mewanted.jpg" alt="image of me in wild west olde style" style="height: 64px; width:64px; border-radius: 100%;"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -73,17 +73,7 @@
                             <th scope="col">What</th>                            
                           </tr>
                         </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1997 - 1999</th>
-                            <td>Sheffield Hallam University</td>
-                            <td>HND Software Engineering</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2005 - 2011</th>
-                            <td>Sheffield University</td>
-                            <td>HNC Archaeology (Archaeology/Natural and Human Environments)</td>
-                          </tr>
+                        <tbody id="educationtablebody">
                         </tbody>
                       </table>
                 </div>
@@ -102,32 +92,7 @@
                             <th scope="col">What</th>                            
                           </tr>
                         </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">January 1998 - January 1999</th>
-                            <td>Speedwing Cargo (British Airways) University placement</td>
-                            <td>Various jobs.</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">June 1999 - August 1999</th>
-                            <td>Key Systems Ltd.</td>
-                            <td>VB6 Development on advertisement booking system.</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">August 1999 - February 2001</th>
-                            <td>TBS Ltd.</td>
-                            <td>VB6 Development on back end communications manager for flagship mobile phone fleet management system.</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2001 - 2003</th>
-                            <td>Plusnet</td>
-                            <td>Back end and Front end development on plusnet portal/systems, mainly in financial backend and customer web statistics generator front end.</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">June 2003 - November 2020</th>
-                            <td>Sanderson Computers Ltd.</td>
-                            <td>VB6 development on CRM system, created a piece of software that automated email processing, ie. process orders automatically when emails come in, flexible approach to allow the software to do pretty much anything once the configuration was done/custom code written.</td>
-                          </tr>
+                        <tbody id="worktablebody">               
                         </tbody>
                       </table>
                 </div>
@@ -141,37 +106,10 @@
                     <table class="table table-primary table-striped">
                         <thead>
                           <tr>
-                            <th scope="col">Language/technology</th>                            
+                            <th scope="col">Language/technology/skill</th>                            
                           </tr>
                         </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">Visual Basic 6</th>                            
-                          </tr>
-                          <tr>
-                            <th scope="row">HTML</th>                            
-                          </tr>
-                          <tr>
-                            <th scope="row">CSS</th>                            
-                          </tr>
-                          <tr>
-                            <th scope="row">Bootstrap</th>                            
-                          </tr>
-                          <tr>
-                            <th scope="row">Javascript</th>                            
-                          </tr>
-                          <tr>
-                            <th scope="row">Typescript</th>                            
-                          </tr>
-                          <tr>
-                            <th scope="row">C#</th>                            
-                          </tr>
-                          <tr>
-                            <th scope="row">Unidata Basic</th>                            
-                          </tr>
-                          <tr>
-                            <th scope="row">SQL</th>                            
-                          </tr>                          
+                        <tbody id="skillstablebody">
                         </tbody>
                       </table>
                 </div>
@@ -182,85 +120,7 @@
             <div class="sectionheader" id="projectsheader">Projects</div>
             <div class="row">
                 <div class="col" id="projectcards">    
-                    <div class="row row-cols-1 row-cols-md-2 g-4">
-                        <div class="col">
-                            <div class="card">
-                                <div class="cardsectionheader"><h5 class="card-title">Local Tourism website</h5></div>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-2 verticalsection text-center">
-                                            <button type="button" class="btn btn-success btn-sm rounded-pill">Code</button>
-                                            <br><br>
-                                            <button type="button" class="btn btn-success btn-sm rounded-pill">Web</button>
-                                            <br><br>
-                                            <button type="button" class="btn btn-success btn-sm rounded-pill disabled">HTML</button>
-                                            <br><br>
-                                            <button type="button" class="btn btn-success btn-sm rounded-pill disabled">CSS</button>
-                                            <br><br>
-                                            <button type="button" class="btn btn-success btn-sm rounded-pill disabled">Bootstrap</button>
-                                        </div>
-                                        <div class="col-10 cardbody">
-                                            <img src="./images/exampletourismwebsite.jpg" class="card-img-top" alt="Image taken from example tourism website">
-                                            <div class="card-body">                                  
-                                            <p class="card-text">Website put together to show three local popular tourist areas and some of the photographs I've taken in the area.</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>                                        
-                                            </div>
-                                        </div>
-                                    </div>  
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="cardsectionheader"><h5 class="card-title">Quiz website</h5></div>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-2 verticalsection">&nbsp;</div>
-                                        <div class="col-10 cardbody">
-                                            <img src="./images/quizexample.jpg" class="card-img-top" alt="Image taken from quiz example website">
-                                            <div class="card-body">                                  
-                                              <p class="card-text">This website was done for a project that required a quiz to be made demonstrating use of javascript, HTML and CSS.</p>
-                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                            </div>
-                                        </div>
-                                    </div>  
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="cardsectionheader"><h5 class="card-title">Caesar Cypher website</h5></div>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-2 verticalsection">&nbsp;</div>
-                                        <div class="col-10 cardbody">
-                                            <img src="./images/caesercypher.jpg" class="card-img-top" alt="Image taken from caesar cypher website">
-                                            <div class="card-body">                                  
-                                              <p class="card-text">A website done to demonstrate Caeser Cypher text cyphering.</p>
-                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                            </div>
-                                        </div>
-                                    </div>  
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="cardsectionheader"><h5 class="card-title">Javascript adventure game</h5></div>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-2 verticalsection">&nbsp;</div>
-                                        <div class="col-10 cardbody">
-                                            <img src="./images/javascriptadventuregame.jpg" class="card-img-top" alt="Image taken from javascript adventure website">
-                                            <div class="card-body">                                  
-                                              <p class="card-text">This project was done to demonstrate use of classes within Javascript, I chose to base mine on an old game I used to play in the 1980s called Treasures of Tarmin on the Mattel Aquarius.</p>
-                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                            </div>
-                                        </div>
-                                    </div>  
-                                </div>
-                            </div>
-                        </div>                        
+                    <div class="row row-cols-1 row-cols-md-2 g-4" id="projectsbody">                                          
                     </div>                        
                 </div>
             </div>
@@ -275,12 +135,14 @@
         <div class="container">
           <div class="row" style="text-align: center;">
             <div class="" style="margin: auto;">
-              <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="http://twitter.com/keirong" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter fa-2x"></i></a>
+              <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="http://twitter.com/keirong" role="button" data-mdb-ripple-color="dark" target="_"><i class="fab fa-twitter fa-2x" alt="Image showing twitter logo"></i></a>
+              <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="./KeironGoodwinCV.pdf" role="button" data-mdb-ripple-color="dark" target="_"><img height="32px" width="32px" src="./images/CV.webp" alt="Image showing CV"></a>
+              <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/in/keiron-lee-goodwin-aab541a" role="button" data-mdb-ripple-color="dark" target="_"><i class="fab fa-linkedin-in" alt="Image showing LinkedIn logo"></i></a>
             </div>
           </div>
           <div class="row">
             <div class="" style="text-align: center;">
-              <h5>Copyright Keiron Goodwin 2022</h5>
+              <h5>(C) Keiron Goodwin 2022</h5>
             </div>
           </div>
         </div>
