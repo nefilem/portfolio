@@ -44,9 +44,9 @@ function generateContent() {
     projectsArray.forEach(element => {        
         let buttonString = "";
         element[3].forEach(element => {
-            buttonString += '<button type="button" class="btn btn-success btn-sm rounded-pill resizebutton disabled">' + element + '</button><br><br>';
+            buttonString += '<button type="button" class="btn btn-success btn-sm rounded-pill resizebutton disabled">' + element + '</button>';
         });
 
-        projectsTable.innerHTML += '<div class="col"><div class="card"><div class="cardsectionheader"><h5 class="card-title">' + element[0] + '</h5></div><div class="container"><div class="row"><div class="col-2 verticalsection text-center"><a href="' + element[1] + '" target="_"><button type="button" class="btn btn-success btn-sm rounded-pill resizebutton">Code</button></a><br><br><a href="' + element[2] + '" target="_"><button type="button" class="btn btn-success btn-sm rounded-pill resizebutton">Web</button></a><br><br>' + buttonString + '</div><div class="col-10 cardbody"><img src="' + element[4] + '" class="card-img-top" alt="' + element[5] + '"><div class="card-body"><p class="card-text">' + element[6] + '</p><!-- p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p --></div></div></div></div></div></div>';
+        projectsTable.innerHTML += '<div class="col"><div class="card mainBGColour"><div class="cardsectionheader subBGColourFour"><h5 class="card-title whiteFloatShadow fw-bold">' + element[0] + '</h5></div><div class="container"><div class="row"><div class="col-1 verticalsection text-center subBGColourFour"></div><div class="col-11 cardbody bg-white"><img src="' + element[4] + '" class="card-img-top" alt="' + element[5] + '"><div class="card-body"><p class="card-text">' + element[6] + '</p><!-- p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p --></div></div></div></div></div><div class="cardsectionfooter subBGColourFour"><a href="' + element[1] + '" target="_"><button type="button" class="btn btn-success btn-sm rounded-pill resizebutton">Code</button></a><a href="' + element[2] + '" target="_"><button type="button" class="btn btn-success btn-sm rounded-pill resizebutton">Web</button></a>' + buttonString + '</div></div>';
     });
 }

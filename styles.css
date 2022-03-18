@@ -1,15 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('http://fonts.cdnfonts.com/css/blankblizzkrieg');     
+@import url('http://fonts.cdnfonts.com/css/springsteel-serif');                     
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #fcd768;
+    /* background-color: #fcd768; */
+}
+
+.mainBGColour {
+    /* background-color: #EFCA71; */
+    background-color: #B0A541;
+}
+
+.subBGColourOne {
+    /* background-color: #E8D8B2; */
+    background-color: #7D786D;
+}
+
+.subBGColourTwo {
+    /* background-color: #E3BF6B; */
+    background-color: #E3BF6B;
+}
+
+.subBGColourThree {
+    /* background-color: #635D4D; */
+    background-color: #A5CAE6;
+}
+
+.subBGColourFour {
+    /* background-color: #B09453; */
+    background-color: #419DB0;
+}
+
+.mainColour {
+    /* background-color: #EFCA71; */
+    color: #B0A541;
+}
+
+.subColourOne {
+    /* background-color: #E8D8B2; */
+    color: #7D786D;
+}
+
+.subColourTwo {
+    /* background-color: #E3BF6B; */
+    color: #E3BF6B;
+}
+
+.subColourThree {
+    /* background-color: #635D4D; */
+    color: #A5CAE6;
+}
+
+.subColourFour {
+    /* background-color: #B09453; */
+    color: #419DB0;
+}
+
+.standoutColourOne {
+    color: #FF4534;
+}
+
+.standoutColourTwo {
+    color: #B04E3A;
+}
+
+.colourTeal {
+    color: #54B08C;
 }
 
 .sectionheader {
     font-size: 2rem;
-    background-color: #fcd768;
-    color: #ebc657;
+    /* background-color: #fcd768; */
+    /* color: #ebc657; */
+    color: rgba(0, 0, 0, 0.2);
     height: 2.5%;
     width: 100%;
     align-items: center;
@@ -20,14 +85,14 @@ body {
 
 .cardsectionheader {
     font-size: 2rem;
-    background-color: #007bb8;
-    color: #dddddd;
+    /* background-color: #007bb8; */
+    /* color: #dddddd; */
     height: 45px;
     width: 98%;
     align-items: center;
     text-align: left;
     vertical-align: middle;
-    padding-left: 15.5%;
+    padding-left: 8%;
     padding-top: 10px;
     margin-left: 12px;
     border-radius: 20px 20px 20px 0;
@@ -35,9 +100,9 @@ body {
 
 .verticalsection {
     font-size: 0.75rem;
-    background-color: #007bb8;
-    color: #dddddd;   
-    border-radius: 0 0 0 20px; 
+    /* background-color: #007bb8; */
+    /* color: #dddddd;    */
+    border-radius: 0 0 0 0; 
 }
 
 #maincontainer {
@@ -57,21 +122,23 @@ body {
 
 .card {
     border-style: none;
-    background-color: #fcd768;
+    /* background-color: #fcd768; */
 }
 
 .cardbody {
-    background-color: white;
+    /* background-color: white; */
 }
 
 .quotebody {
-    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Springsteel Serif', sans-serif;                                                
     font-size: 2.25rem;
     text-align: right;
 }
 
 .quoteauthor {
-    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Springsteel Serif', sans-serif;                                                
     font-size: 1.25rem;
     text-align: right;
 }
@@ -79,17 +146,42 @@ body {
 .mebody {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
-    background-color: #fcd768;
-    color:black;
+    /* background-color: #fcd768; */
+    /* color:black; */
 }
 
 .mebodyhighlight {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Blankblizzkrieg', sans-serif;
+    /* font-family: 'Blankblizzkriegi', sans-serif; */
     font-size: 2.5rem;
-    background-color: #fcd768;
-    color: #ff37b5;
+    /* background-color: #fcd768; */
+    /* color: #ff37b5; */
 }
 
 .resizebutton {
-    width:100%;
+    /* width:100%; */
+}
+
+.cardsectionfooter {
+    font-size: 2rem;
+    /* background-color: #007bb8; */
+    /* color: #dddddd; */
+    height: 45px;
+    width: 98%;
+    align-items: center;
+    text-align: center;
+    vertical-align: top;
+    margin-top: -8px;    
+    margin-left: 12px;
+    border-radius: 0 20px 20px 20px;
+}
+
+.whiteFloatShadow {
+    /* text-shadow: 2px 8px 6px rgba(255,255,255,0.82),
+                 0px -5px 35px rgba(255,255,255,0.3); */
+    text-shadow: 1px 1px 1px white,
+                 -1px 1px 1px white,
+                 1px -1px 1px white,
+                 -1px -1px 1px white;
 }
