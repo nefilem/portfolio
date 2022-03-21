@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 /* @import url('https://fonts.cdnfonts.com/css/blankblizzkrieg');      */
 /* @import url('https://fonts.cdnfonts.com/css/springsteel-serif');                      */
+@font-face {
+    font-family: 'blankblizzkrieg';
+    src: url('./fonts/Blankblizzkrieg.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+@font-face {
+    font-family: 'springsteel-serif';
+    src: url('./fonts/SpringsteelSerif-Thin.otf') format('opentype');
+  }  
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -131,14 +140,14 @@ body {
 
 .quotebody {
     /* font-family: 'Dancing Script', cursive; */
-    font-family: 'Springsteel Serif', sans-serif;                                                
+    font-family: 'Springsteel-Serif', sans-serif;                                                
     font-size: 2.25rem;
     text-align: right;
 }
 
 .quoteauthor {
     /* font-family: 'Dancing Script', cursive; */
-    font-family: 'Springsteel Serif', sans-serif;                                                
+    font-family: 'Springsteel-Serif', sans-serif;                                                
     font-size: 1.25rem;
     text-align: right;
 }
