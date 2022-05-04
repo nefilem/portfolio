@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu&display=swap');
+body {
+    font-family: Montserrat;
+    background-color: black;
+    color: white;
+}
+
+.navbar-nav > li {
+    float: left;
+    position: relative;
+  }
+
+.navbar-nav > li > a {
+    float: left;
+    position: relative;
+    border-bottom: 5px solid #212529;
+}
+
+.navbar-nav > li > a:hover {
+    float: left;
+    position: relative;
+    border-bottom: 5px solid #006600;
+}
+
+.navbar-dark .navbar-nav a::after {
+    border-bottom: 5px solid #212529;
+    bottom: -10px;
+    content: " ";
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+
+a.nav-link.active {
+    border-bottom: 5px solid #00dd00 !important;
+  }
+
+.highlighttext {
+    color: #00dd00;
+}
+
+.highlightra {
+    color: #00dd00;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.aboutme {
+    font-size: 1.5em;
+}
+
+.underline {
+    font-size: 1.5em;
+    border-bottom: 5px solid #00dd00;   
+}
