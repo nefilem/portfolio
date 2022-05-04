@@ -1,6 +1,6 @@
 const skillsArray = ["Visual Basic 6/VB.Net","Pick Data basic/Unidata","Database","Problem Solving",
-                     "JavaScript","PHP","MySQL","SQL Server","HTML 5","CSS","Bootstrap 5",
-                     ".Net Framework 4","WPF","MVC","Silverlight","jQuery","Customer support",
+                     "JavaScript","PHP","MySQL","SQL Server","HTML 5","CSS","Bootstrap 5", "NodeJS", "React",
+                     ".Net Framework 4","WPF","MVC","Silverlight","jQuery","Windows", "Linux", "Customer support",
                      "Time management","Team Leading"];
 
 const workArray = [["January 1998 - January 1999", "Speedwing Cargo (British Airways) University placement", "Various jobs"],
@@ -21,23 +21,64 @@ const projectsArray = [["Local Tourism website", "https://github.com/nefilem/hob
  * Generates content based off above arrays
  */
 function generateContent() {
-    let skillsTable = document.getElementById("skillstablebody");
+    
+    // let skillsTable = document.getElementById("skillstablebody");
 
-    skillsArray.forEach(element => {
-        skillsTable.innerHTML += '<tr><th scope="row">' + String(element) + '</th></tr>';
+    // skillsArray.forEach(element => {
+    //     skillsTable.innerHTML += '<tr><th scope="row">' + String(element) + '</th></tr>';
+    // });
+
+console.log(1);
+
+    let skillsRow = document.getElementById("skillsrow");
+    let htmlToSet = '<div class="row">';
+    skillsArray.forEach((response, i) => {
+        if (i % 2 === 0) {
+            htmlToSet += '</div><div class="row"><div class="col-1"></div><div class="col-5"><span class="highlightra">&#x25A0;</span> ' + String(response) + '</div>';
+        } else {
+            htmlToSet += '<div class="col-5"><span class="highlightra">&#x25A0;</span> ' + String(response) + '</div><div class="col-1"></div>';
+        }
     });
+    htmlToSet += '</div>';
+    skillsRow.innerHTML += htmlToSet;
 
-    let workTable = document.getElementById("worktablebody");
+    console.log(htmlToSet);
 
-    workArray.forEach(element => {
-        workTable.innerHTML += '<tr><th scope="row">' + String(element[0]) + '</th><td>' + String(element[1]) + '</td><td>' + String(element[2]) + '</td></tr>';    
+    console.log(2);
+
+    // let workTable = document.getElementById("worktablebody");
+
+    // workArray.forEach(element => {
+    //     workTable.innerHTML += '<tr><th scope="row">' + String(element[0]) + '</th><td>' + String(element[1]) + '</td><td>' + String(element[2]) + '</td></tr>';    
+    // });
+
+    let workRow = document.getElementById("workrow");
+    htmlToSet = '<div class="row">';
+    workArray.forEach((element, i) => {
+        htmlToSet += '<div class="row"><div class="col-1"></div><div class="col-10"><span class="highlightra">&#x25A0;</span> ' + element[0] + '</div><div class="col-1"></div></div>';
+        htmlToSet += '<div class="row"><div class="col-2"></div><div class="col-9"><span class="highlightra">&#x25CF;</span> ' + element[1] + '</div><div class="col-1"></div></div>';
+        htmlToSet += '<div class="row"><div class="col-3"></div><div class="col-8"><span class="highlightra">&#x25B2;</span> ' + element[2] + '</div><div class="col-1"></div></div>';
     });
+    htmlToSet += '</div>';
+    workRow.innerHTML += htmlToSet;
 
-    let educationTable = document.getElementById("educationtablebody");
 
-    educationArray.forEach(element => {
-        educationTable.innerHTML += '<tr><th scope="row">' + element[0] + '</th><td>' + element[1] + '</td><td>' + element[2] + '</td></tr>';
+    // let educationTable = document.getElementById("educationtablebody");
+
+    // educationArray.forEach(element => {
+    //     educationTable.innerHTML += '<tr><th scope="row">' + element[0] + '</th><td>' + element[1] + '</td><td>' + element[2] + '</td></tr>';
+    // });
+
+    let educationRow = document.getElementById("educationrow");
+    htmlToSet = '<div class="row">';
+    educationArray.forEach((element, i) => {
+        htmlToSet += '<div class="row"><div class="col-1"></div><div class="col-10"><span class="highlightra">&#x25A0;</span> ' + element[0] + '</div><div class="col-1"></div></div>';
+        htmlToSet += '<div class="row"><div class="col-2"></div><div class="col-9"><span class="highlightra">&#x25CF;</span> ' + element[1] + '</div><div class="col-1"></div></div>';
+        htmlToSet += '<div class="row"><div class="col-3"></div><div class="col-8"><span class="highlightra">&#x25B2;</span> ' + element[2] + '</div><div class="col-1"></div></div>';
     });
+    htmlToSet += '</div>';
+    educationRow.innerHTML += htmlToSet;
+
 
     let projectsTable = document.getElementById("projectsbody");
 
@@ -49,4 +90,16 @@ function generateContent() {
 
         projectsTable.innerHTML += '<div class="col"><div class="card mainBGColour"><div class="cardsectionheader subBGColourFour"><h5 class="card-title whiteFloatShadow fw-bold">' + element[0] + '</h5></div><div class="container"><div class="row"><div class="col-1 verticalsection text-center subBGColourFour"></div><div class="col-11 cardbody bg-white"><img src="' + element[4] + '" class="card-img-top" alt="' + element[5] + '"><div class="card-body"><p class="card-text">' + element[6] + '</p><!-- p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p --></div></div></div></div></div><div class="cardsectionfooter subBGColourFour"><a href="' + element[1] + '" target="_"><button type="button" class="btn btn-success btn-sm rounded-pill resizebutton">Code</button></a><a href="' + element[2] + '" target="_"><button type="button" class="btn btn-success btn-sm rounded-pill resizebutton">Web</button></a>' + buttonString + '</div></div>';
     });
+
+    console.log(window.innerHeight);
+    let objSection = document.getElementById("qualifications");
+    //objSection.style.height = window.innerHeight;
+    objSection.style.minHeight = window.innerHeight + "px";
+    objSection = document.getElementById("work");
+    //objSection.style.height = window.innerHeight + "px";
+    objSection.style.minHeight = window.innerHeight + "px";
+    objSection = document.getElementById("skills");
+    //objSection.style.height = window.innerHeight + "px";
+    objSection.style.minHeight = window.innerHeight + "px";
+
 }
