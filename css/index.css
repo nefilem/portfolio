@@ -53,3 +53,7 @@ a.nav-link.active {
     font-size: 1.5em;
     border-bottom: 5px solid #00dd00;   
 }
+
+#projects {
+    border-bottom: 25px;
+}
