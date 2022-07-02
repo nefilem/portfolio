@@ -5,6 +5,9 @@ body {
     color: white;
 }
 
+.mainBGColour {
+    background-color: black;   
+}
 .navbar-nav > li {
     float: left;
     position: relative;
